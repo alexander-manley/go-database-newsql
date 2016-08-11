@@ -2,8 +2,11 @@
 Connect and manipulate a connection to CockroachDB
 
 /* Template to link out to CockroachDB via pq driver  https://www.cockroachlabs.com/docs/build-a-test-app.html
+
 cockroach sql -e 'CREATE DATABASE bank'
+
 cockroach sql -e 'GRANT ALL ON DATABASE bank TO maxroach'
+
 cockroach sql --database=bank --user=maxroach -e 'CREATE TABLE accounts (id INT PRIMARY KEY, balance INT)' 
 */
 
